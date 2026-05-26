@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonders Log</title>
+    <style>
+        :root {
+            --dusty-olive: #797d62ff;
+            --palm-leaf: #9b9b7aff;
+            --desert-sand: #d9ae94ff;
+            --soft-peach: #f1dca7ff;
+            --golden-pollen: #ffcb69ff;
+            --toasted-almond: #d08c60ff;
+            --dusty-taupe: #997b66ff;
+        }
+
+        body {
+            background-color: dimgray;
+        }
+
+        #main-con {
+            background-color: var(--dusty-taupe);
+            border-radius: 30px;     
+            padding: 0.01px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .head-con {
+            background-color: var(--palm-leaf);
+            border-radius: 30px 30px 10px 10px;
+            color: var(--soft-peach);
+            text-align: center;
+            padding: 10px;
+            align-items: center;
+            margin-bottom: 2px;
+        }
+        .mid-con {
+            display: flex;
+            justify-content: flex-start;
+            gap: 5px;
+            align-content: center;
+        }
+        .side-con {
+            background-color: var(--palm-leaf);
+            color: var(--soft-peach);
+            width: 18%;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            gap: 5px
+        }
+
+        #home-page {
+            user-select: none;
+            cursor: pointer;
+        }
+
+        #about-page {
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .contact {
+            font-size: small;
+            margin-top: 40px;
+        }
+
+        .content {
+            background-color: var(--palm-leaf);
+            width: 78%;
+            border-radius: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            background-image: url(src/);
+        }
+        .wonder-con {
+            display: flex;
+            gap: 4px;
+            overflow: auto;
+            resize: both;
+            border-radius: 10px;
+            flex-wrap: wrap;
+            margin-top: 2vh;
+            padding: 10px;
+            min-width: 40vh;
+            min-height: 40vh;
+            background-image: 
+            linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url(src/TajMahalbyAmalMongia.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            stroke: 2px solid black;
+        }
+        
+        .wonder-con h1 {
+            color: var(--golden-pollen);
+        }
+        
+        .content h1 {
+            color: var(--soft-peach);
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        #wonder {
+            min-width: 30vh;
+            background-color: var(--dusty-olive);
+            min-height: 30vh;
+            border-radius: 10px;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        #wonder.china {
+            background-image: url(src/GreatWallNearBeijingWinter.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #wonder.egypt {
+            background-image: url(src/Kheops-Pyramid.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+         #wonder.italy {
+            background-image: url(src/Colosseum_in_Rome\,_Italy_-_April_2007.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+         #wonder.jordan {
+            background-image: url(src/Al_khazneh.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+         #wonder.brazil {
+            background-image: url(src/Cristo_Redentor_-_Rio_de_Janeiro\,_Brasil.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+         #wonder.peru {
+            background-image: url(src/Peru_Machu_Picchu_Sunrise.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+         #wonder.india {
+            background-image: url(src/TajMahalbyAmalMongia.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+         #wonder.mexico {
+            background-image: url(src/Chichen_Itza_\(3326547826\).jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #wonder h1 {
+            font-size: 10px;
+        }
+
+        .foot-con p {
+            text-align: center;
+            font-weight:bold;
+            align-content: center;
+        }
+    </style>
+    </style>
+    <script>
+        function gotoabout() {
+            window.location.href = 'about-page.html';
+        }
+        function gotohome(){
+            window.location.href = 'index.html'
+        }
+    </script>
+</head>
+<body>
+    <div id="main-con">
+        <div class="head-con">
+            <h1>Wonders Project</h1>
+        </div>
+        <div class="mid-con">
+        <div class="side-con">
+            <div id="home-page" role="button" onclick="gotohome()"><h4>Home</h4></div>
+            <div id="about-page" role="button" onclick="gotoabout()"><h4>About</h4></div>
+            <div class="contact">+62 01921079221<br>231011450165</div>
+        </div>
+        <div class="content">
+            <h1>The Wonders</h1>
+            <div class="wonder-con">
+                <h1 style="color:white; stroke: 2px solid black;">Taj Mahal</h1>
+The Taj Mahal (/ˌtɑːdʒ məˈhɑːl, ˌtɑːʒ -/ TAHJ mə-HAHL, TAHZH -⁠; Hindustani: [t̪ɑːd͡ʒ ˈmɛɦ(ɛ)l]; lit. 'Crown of the Palace') is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan (r. 1628–1658), to house the tomb of his beloved wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.            </div>
+        </div>
+        </div>
+        <div class="foot-con"><p>Copyright to Omar Muhammad Rafly</p></div>
+    </div>
+</body>
+</html>
